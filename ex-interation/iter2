@@ -1,0 +1,13 @@
+#!/usr/bin/env python
+
+child1 = {
+  "name" : "Emil",
+  "year" : 2004
+}
+
+for k,v in child1.items():
+    print(k,v)
+
+print(type(child1))
+print(dir(child1))
+

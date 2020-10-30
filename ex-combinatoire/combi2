@@ -1,0 +1,13 @@
+#!/usr/bin/env python
+
+import random
+from pprint import pprint 
+
+def combinaison649():
+    combinaison = random.sample(xrange(49),6)
+    random.shuffle(combinaison)
+    return sorted(combinaison)
+
+c649 = combinaison649()
+print(c649)
+print(len(set(c649)))

@@ -1,0 +1,20 @@
+#!/usr/bin/env python
+
+def some_function(n):
+    p = 0
+    for i in range(1,n+1):
+	p = i + p
+        yield p
+
+#m = ""
+#for i in some_function(20):
+#    if m :
+#       m = m + "+" + str(i)
+#    else:
+#       m = str(i)
+#    print m 
+
+for i in some_function(3):
+    print i
+
+
