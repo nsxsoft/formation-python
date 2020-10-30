@@ -1,0 +1,13 @@
+#!/usr/bin/env python
+
+import argparse
+
+def analyser_commande():
+    parser = argparse.ArgumentParser(description='Quoridor - Phase 1')
+    parser.add_argument('IDUL', type=str,help='IDUL du joueur')
+    parser.add_argument('-p','--parties', help='Lister les identifiants de vos 20 dernieres parties')
+    return parser.parse_args()
+
+params = analyser_commande()
+
+print("Mon IDUL: %s" % params.IDUL)
